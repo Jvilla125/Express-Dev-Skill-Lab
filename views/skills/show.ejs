@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <title>Show</title>
+</head>
+<body>
+    <h1><u>Skill # <%= skill.id %></u> </h1>
+    <h3>Skill: <%= skill.skill %> </h3>
+    <form action="/skills/" method="PUT">
+      <input type="text" name="name" value="<%= skill.skill %>"
+      placeholder="Please edit skill">
+      <button type="submit">Edit Skill</button>
+      </form>
+    <h3>Learned: <%= skill.learned ? "Yes" : "NO" %> </h3>
+  </body>
+</html>
+
+
+
